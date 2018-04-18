@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>The Yes Brand</title>
+    <meta name="description" content="">
+    <base href="/2018/theyesbrand/www/">
+
+    <!-- Le styles -->
+    <link href="js/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="js/pages/home/home.css" rel="stylesheet">
+    <link href="js/pages/about/about.css" rel="stylesheet">
+
+	<link rel="icon" href="images/favicon.png">
+</head>
+<body class="page-home loading" ng-app="myApp">
+
+	<header>
+		<div class="container">
+			<a href="." id="logo"><img src="images/logo.png" alt=""></a>
+			<div id="hamburger">
+				<div class="slice"></div>
+				<div class="slice"></div>
+				<div class="slice"></div>
+			</div>
+			<nav translate-cloak>
+                <a 
+                    href="." 
+                    ng-class="{'selected': pageSlug=='home'}"
+                    >INICIO</a>
+                <a 
+                    href="proyectos" 
+                    ng-class="{'selected': pageSlug=='proyectos'}"
+                    >PROYECTOS</a>
+                <a 
+                    href="equipo" 
+                    ng-class="{'selected': pageSlug=='equipo'}"
+                    >EQUIPO</a>
+                <a 
+                    href="clientes" 
+                    ng-class="{'selected': pageSlug=='clientes'}"
+                    >CLIENTES</a>
+                <a 
+                    href="concepto" 
+                    ng-class="{'selected': pageSlug=='concepto'}"
+                    >CONCEPTO</a>
+				<a 
+                    href="contacto" 
+                    ng-class="{'selected': pageSlug=='contacto'}"
+                    >CONTACTO</a>
+			</nav>
+		</div>
+	</header>
+
+	<main ng-view autoscroll="true" translate-cloak></main>
+       
+	
+	<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-6 text-right icons">
+                    <a href="#" target="_blank"><img src="images/fb.png" alt=""></a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" target="_blank"><img src="images/insta.png" alt=""></a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" target="_blank"><img src="images/twitter.png" alt=""></a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" target="_blank"><img src="images/vimeo.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+	</footer>
+
+
+
+	<!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="js/node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="js/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/node_modules/angular/angular.min.js"></script>
+    <script src="js/node_modules/angular-route/angular-route.min.js"></script>
+    <script src="js/node_modules/angular-translate/dist/angular-translate.min.js"></script>
+    <script src="js/node_modules/angular-translate/dist/angular-translate-loader-url/angular-translate-loader-url.min.js"></script>
+    <script src="js/node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+
+    <!-- Angular Application -->
+    <script src="js/config/api.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- Pages Controllers -->
+    <script src="js/pages/home/home-controller.js"></script>
+    <!-- <script src="js/pages/about/about-controller.js"></script> -->
+
+    <!-- Services -->
+
+    <!-- Other libraries -->
+
+</body>
+</html>

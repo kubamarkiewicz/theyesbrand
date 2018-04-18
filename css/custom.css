@@ -1,0 +1,289 @@
+
+/************************************************
+ Bootstrap 4 Responsive breakpoints (https://getbootstrap.com/docs/4.1/layout/overview/)
+
+ xs - Extra small devices 	< 576px
+ sm - Small devices			576px - 768px
+ md - Medium devices		768px - 992px
+ lg - Large devices			992px - 1200px
+ xl - Extra large devices	> 1200px
+
+************************************************/
+
+
+/***********************************************/
+/* Fonts                                       */
+/***********************************************/
+
+
+/***********************************************/
+/* General styles                              */
+/***********************************************/
+
+html { 
+	font-size: 14px; /* define 1rem */
+} 
+body {
+	-webkit-font-smoothing: antialiased;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: #2B2B2B;
+	font-size: 1rem;
+	line-height: 1.3;
+}
+a {
+	color: #979595;
+	text-decoration: underline;
+	transition: all 0.2s ease;
+}
+/* on hover, select */
+a:hover, a:focus {
+	color: #686868;
+	text-decoration: none;
+}
+/* on press */
+a:active {  
+	color: #000000;
+	text-decoration: none;
+}
+p {
+	margin-bottom: 0.5rem;
+}
+h1, h2, h3, h4, h5, h6 {
+}
+h2 {
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+hr {
+}
+img {
+	max-width: 100%;
+}
+
+
+/* loading */
+body.loading p,
+body.loading a,
+body.loading span,
+body.loading h1,
+body.loading h2,
+body.loading h3,
+body.loading h4,
+body.loading h5,
+body.loading > footer {
+	visibility: hidden;
+}
+
+
+
+/* mobile */
+@media (max-width: 991.98px) {
+
+}
+
+/***********************************************/
+/* Layout divs                                 */
+/***********************************************/
+
+
+body > main {
+	margin-top: 80px;
+	animation-name: animation-page-transition;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(.46,1,1,1);
+}
+@keyframes animation-page-transition {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+body.prev-page-undefined > main {
+	animation-duration: 0s;
+}
+
+@media (min-width: 1200px) {
+	.container {
+	    max-width: 1010px;
+	}
+}
+
+/***********************************************/
+/* Page transitions                            */
+/***********************************************/
+
+
+/***********************************************/
+/* Overwritten Bootstrap Styles                */
+/***********************************************/
+
+
+
+@media (max-width: 768px) {
+
+
+
+
+}
+
+
+
+
+/***********************************************/
+/* Forms                                       */
+/***********************************************/
+
+
+/***********************************************/
+/* Components	               		           */
+/***********************************************/
+
+.translate-cloak {
+    display: none;
+}
+
+body > header {
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    background-color: #ffffff;
+    padding-bottom: 6px;
+} 
+body > header .container {
+    flex-direction: row;
+    align-items: flex-end;
+    height: 100%;
+    display: flex;
+} 
+#logo {
+}
+#logo img {
+}
+
+body > header nav {
+    display: inline-block;
+    padding-bottom: 12px;
+    margin-left: 70px;
+}
+body > header nav > a,
+body > header nav > span {
+	text-decoration: none;
+	padding: 0 25px;
+	font-weight: 500;
+}
+body > header nav > a:hover,
+body > header nav > a:focus,
+body > header nav > a:active {
+	/* color: #A0A09F; */
+	/* text-decoration: none; */
+}
+body > header nav a.selected {
+	color: #2B2B2B;
+}
+#hamburger {
+    display: none;
+    z-index: 10;
+}
+#hamburger .slice {;
+    display: block;
+    height: 3px;
+    width: 28px;
+    background-color: #2F2E2E;
+}
+#hamburger .slice + .slice {
+    margin-top: 5px;
+}
+
+
+body > main {
+	overflow: hidden;
+}
+
+body > footer {padding: 60px 0;} 
+
+
+
+@media (max-width: 768px) {
+
+
+
+
+}
+@media (max-width: 991.98px) {
+
+	body {
+	}
+
+	#logo img {
+		height: 42px;
+	}
+
+	#hamburger {
+	    cursor: pointer;
+	    display: block;
+	    position: absolute;
+	    right: 20px;
+	    top: 21px;
+	}
+	body > header {
+		height: 60px;
+		padding-bottom: 7px;
+	}
+	body > header #logo {
+		position: absolute;
+	}
+	body > header nav {
+	    visibility: hidden;
+	    opacity: 0;
+	    transition: visibility 0s linear 0.35s, opacity 0.35s ease-out;
+	    position: fixed;
+	    height: 100%;
+	    width: 100%;
+	    z-index: 14;
+	    left: 0;
+	    top: 61px;
+	    margin: 0;
+	}
+	body > header nav.expanded {
+		visibility: visible;
+		opacity: 1;
+		transition-delay: 0s;
+		min-height: calc(100vh - 61px);
+		overflow-y: auto;
+		background-color: rgba(255,255,255,0.9);
+	}
+	body > header .container {
+   	}
+	body > header nav a,
+	body > header nav span {
+	    display: block;
+	    text-align: center;
+	    font-size: 1.25rem;
+	    width: auto;
+	    border-left: 0;
+	    border-top: 1px solid #ffffff;
+	    padding: 15px 0;
+	    margin: 0 30px;
+	}
+	body > header nav > a:first-child {
+		border-top: none;
+	}
+	body > header nav span {
+		
+	}
+	
+	body > main {
+		margin-top: 60px;
+	}
+
+	.anchor-offset::before {
+		height:80px; /* fixed header height*/
+	}
+
+}
+

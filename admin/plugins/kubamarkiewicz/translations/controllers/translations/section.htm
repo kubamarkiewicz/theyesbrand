@@ -1,0 +1,66 @@
+<?php Block::put('breadcrumb') ?>
+    <ul>
+        <li><a href="<?= Backend::url('kubamarkiewicz/translations/translations/section') ?>"><?= e(trans('kubamarkiewicz.translations::lang.plugin.name')) ?></a></li>
+        <li><small style="text-transform: uppercase"><?=$section ? $section->fullKey : ''?></small></li>
+    </ul>
+<?php Block::endPut() ?>
+
+
+
+<section id="section-translations">
+	
+	<aside>
+		<?= $this->makePartial('sidepanel') ?>
+	</aside>	
+
+
+	<main>
+
+		<?php if ($section && $hasFields) : ?>
+
+			<?php if ($section->path) : ?>
+				<h3><?=$section->path?></h3>
+			<?php endif ?>
+			<h2><?=$section->code?></h2>
+
+
+		    <?= Form::open(['class' => 'layout']) ?>
+
+		        <div class="form-buttons">
+		            <div class="loading-indicator-container">
+		                <button
+		                    type="submit"
+		                    data-request="onSave"
+		                    data-request-data="redirect:0"
+		                    data-hotkey="ctrl+s, cmd+s"
+		                    data-load-indicator="<?= e(trans('backend::lang.form.saving')) ?>"
+		                    class="btn btn-primary">
+		                    <?= e(trans('backend::lang.form.save')) ?>
+		                </button>
+		            </div>
+		        </div>
+
+
+				<div class="layout-row">
+	        		<?= $form->render() ?>
+	        	</div>
+			    
+
+	    	<?= Form::close() ?>
+
+
+		<?php endif ?>
+
+	</main>	
+
+</section>
+
+<script>
+	$(function(){
+
+		$("#language-switch select").change(function(){
+			window.location = '<?= Backend::url('kubamarkiewicz/translations/translations/section') ?>/<?=$id?>/' + $(this).val();
+		});
+
+	});
+</script>
