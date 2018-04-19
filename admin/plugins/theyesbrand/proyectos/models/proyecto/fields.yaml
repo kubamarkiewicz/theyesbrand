@@ -30,7 +30,7 @@ fields:
         label: 'Imágen pequeña'
         mode: image
         imageWidth: '300'
-        imageHeight: '200'
+        imageHeight: '150'
         useCaption: 0
         thumbOptions:
             mode: auto
