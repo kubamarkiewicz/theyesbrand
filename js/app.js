@@ -229,6 +229,25 @@ app.run(function($rootScope, $sce, $http, $location, $translate, $window, $route
 
 
 
+
+
+
+    // load proyectos data
+    $rootScope.proyectosData = null;
+    $rootScope.loadProyectosData = function()
+    {
+        $http({
+            method  : 'GET',
+            url     : config.api.urls.getProyectos
+        })
+        .then(function(response) {
+            $rootScope.proyectosData = response.data;
+        });
+    }
+    $rootScope.loadProyectosData();
+
+
+
     // set metadata
     $rootScope.setMetadata = function()
     {

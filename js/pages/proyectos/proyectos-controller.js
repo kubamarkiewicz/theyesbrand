@@ -1,6 +1,6 @@
 app.controller('ProyectosController', function($scope, $rootScope, $http, $routeParams, config) {  
    
-    $scope.proyectosData = null;
+/*    $scope.proyectosData = null;
     
     $http({
         method  : 'GET',
@@ -8,6 +8,6 @@ app.controller('ProyectosController', function($scope, $rootScope, $http, $route
     })
     .then(function(response) {
         $scope.proyectosData = response.data;
-    });
+    });*/
 
 });
