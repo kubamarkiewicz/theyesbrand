@@ -1,0 +1,11 @@
+section#proyecto-images {
+}
+section#proyecto-images .image {
+	display: block;
+}
+
+
+/* lg devices */
+@media screen and (max-width: 992px) {
+
+}

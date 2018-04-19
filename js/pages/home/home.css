@@ -1,7 +1,7 @@
 
 section#home-banners {}
 section#home-banners .banner {
-	height: calc(95vh - 80px);
+	height: calc(95vh - var(--header-height));
 	background-size: cover;
 	background-position: center center;
 	color: #686868;

@@ -1,13 +1,7 @@
 <div data-control="toolbar">
-    <a href="<?= Backend::url('kubamarkiewicz/pages/pages/create') ?>" class="btn btn-primary oc-icon-plus">
-        <?= e(trans('backend::lang.form.create')) ?>
-    </a>
-    <a
-        href="<?= Backend::url('kubamarkiewicz/pages/pages/reorder') ?>"
-        class="btn btn-default oc-icon-bars">
-        <?= e(trans('backend::lang.reorder.default_title')) ?>
-    </a>        
-    <button
+        <a href="<?= Backend::url('theyesbrand/proyectos/proyectos/create') ?>" class="btn btn-primary oc-icon-plus"><?= e(trans('backend::lang.form.create')) ?></a>
+            <a href="<?= Backend::url('theyesbrand/proyectos/proyectos/reorder') ?>" class="btn btn-default oc-icon-list"><?= e(trans('backend::lang.reorder.default_title')) ?></a>
+        <button
         class="btn btn-default oc-icon-trash-o"
         disabled="disabled"
         onclick="$(this).data('request-data', {
@@ -19,9 +13,7 @@
         data-trigger=".control-list input[type=checkbox]"
         data-trigger-condition="checked"
         data-request-success="$(this).prop('disabled', true)"
-        data-stripe-load-indicator
-		style="float:right"
-        >
+        data-stripe-load-indicator>
         <?= e(trans('backend::lang.list.delete_selected')) ?>
     </button>
 </div>

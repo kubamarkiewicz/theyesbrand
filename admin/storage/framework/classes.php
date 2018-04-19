@@ -178,4 +178,10 @@
   'ToughDeveloper\\ImageResizer\\Classes\\Image' => 'plugins/toughdeveloper/imageresizer/classes/Image.php',
   'ToughDeveloper\\ImageResizer\\Models\\Settings' => 'plugins/toughdeveloper/imageresizer/models/Settings.php',
   'KubaMarkiewicz\\Translations\\FormWidgets\\TranslationsSection' => 'plugins/kubamarkiewicz/translations/formwidgets/TranslationsSection.php',
+  'RainLab\\Builder\\Classes\\FilesystemGenerator' => 'plugins/rainlab/builder/classes/FilesystemGenerator.php',
+  'theyesbrand\\proyectos\\Plugin' => 'plugins/theyesbrand/proyectos/Plugin.php',
+  'RainLab\\Builder\\Classes\\ControllerGenerator' => 'plugins/rainlab/builder/classes/ControllerGenerator.php',
+  'theyesbrand\\proyectos\\Controllers\\proyectos' => 'plugins/theyesbrand/proyectos/controllers/proyectos.php',
+  'TheYesBrand\\Proyectos\\Models\\Proyecto' => 'plugins/theyesbrand/proyectos/models/Proyecto.php',
+  'TheYesBrand\\Proyectos\\Api\\Proyectos' => 'plugins/theyesbrand/proyectos/api/Proyectos.php',
 );

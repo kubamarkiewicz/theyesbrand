@@ -1,0 +1,43 @@
+section#proyectos-index {
+	display: flex;
+	flex-wrap: wrap;
+}
+section#proyectos-index > a {
+	display: block;
+	width: 33.33%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	background-size: cover;
+	background-position: center center;
+}
+section#proyectos-index > a::after {
+	content: "";
+	display: block;
+	padding-bottom: 84%;
+	background-color: rgba(0,0,0);
+	opacity: 0.2;
+	transition: opacity .1s cubic-bezier(.455,.03,.515,.955);
+}
+/* on hover, select */
+section#proyectos-index > a:hover::after, 
+section#proyectos-index > a:focus::after,
+section#proyectos-index > a:active::after {
+	opacity: 0;
+}
+
+/* lg devices */
+@media screen and (max-width: 992px) {
+
+	section#proyectos-index > a {
+		width: 50%;
+	}
+
+}
+/* xs devices */
+@media screen and (max-width: 576px) {
+
+	section#proyectos-index > a {
+		width: 100%;
+	}
+
+}

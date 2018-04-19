@@ -31,6 +31,9 @@ tabs:
             label: 'kubamarkiewicz.pages::lang.page.slug'
             span: left
             required: 1
+            preset:
+                field: name
+                type: slug
             type: text
             comment: 'kubamarkiewicz.pages::lang.page.slug_comment'
             tab: 'kubamarkiewicz.pages::lang.page.tab_url'

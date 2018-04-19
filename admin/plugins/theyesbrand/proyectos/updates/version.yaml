@@ -1,0 +1,8 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table theyesbrand_proyectos_proyectos'
+    - builder_table_create_theyesbrand_proyectos_proyectos.php
+1.0.3:
+    - 'Updated table theyesbrand_proyectos_proyectos'
+    - builder_table_update_theyesbrand_proyectos_proyectos.php

@@ -10,7 +10,9 @@ window.config.api = {
 	"urls" : {
         "getPages"              : "admin/api/pages",
         "getTranslations"		: "admin/api/translations",
-        "missingTranslations"	: "admin/api/translations"
+        "missingTranslations"	: "admin/api/translations",
+        "getProyectos"			: "admin/api/proyectos",
+        "getProyecto"			: "admin/api/proyectos/:slug"
 	}
 
 }

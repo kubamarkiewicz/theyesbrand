@@ -1,0 +1,4 @@
+title: Proyectos
+modelClass: TheYesBrand\Proyectos\Models\Proyecto
+toolbar:
+    buttons: reorder_toolbar

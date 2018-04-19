@@ -1,0 +1,11 @@
+plugin:
+    name: 'theyesbrand.proyectos::lang.plugin.name'
+    description: 'theyesbrand.proyectos::lang.plugin.description'
+    author: 'The Yes Brand'
+    icon: oc-icon-diamond
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Proyectos
+        url: theyesbrand/proyectos/proyectos
+        icon: icon-diamond

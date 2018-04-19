@@ -1,0 +1,10 @@
+name: Proyectos
+form: $/theyesbrand/proyectos/models/proyecto/fields.yaml
+modelClass: TheYesBrand\Proyectos\Models\Proyecto
+defaultRedirect: theyesbrand/proyectos/proyectos
+create:
+    redirect: 'theyesbrand/proyectos/proyectos/update/:id'
+    redirectClose: theyesbrand/proyectos/proyectos
+update:
+    redirect: theyesbrand/proyectos/proyectos
+    redirectClose: theyesbrand/proyectos/proyectos

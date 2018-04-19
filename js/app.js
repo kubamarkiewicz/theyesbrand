@@ -106,10 +106,14 @@ app.config(function ($routeProvider, $locationProvider) {
             controller: 'HomeController', 
             templateUrl: 'js/pages/home/index.html' 
         }) 
-/*        .when('/about', { 
-            controller: 'AboutController', 
-            templateUrl: 'js/pages/about/index.html' 
-        })   */
+        .when('/proyectos/:slug', { 
+            controller: 'ProyectoController', 
+            templateUrl: 'js/pages/proyecto/index.html' 
+        }) 
+        .when('/proyectos', { 
+            controller: 'ProyectosController', 
+            templateUrl: 'js/pages/proyectos/index.html' 
+        })   
         .otherwise({ 
             redirectTo: '/' 
         }); 
@@ -142,10 +146,8 @@ app.run(function($rootScope, $sce, $http, $location, $translate, $window, $route
         .addClass("prev-page-"+$rootScope.pageSlug);
 
         // find page slug
-        if (next.originalPath == undefined) {
-            next.originalPath = '/' + $rootScope.homeSlug;
-        }
-        if (next.originalPath && next.originalPath.substring(1)) {
+        delete $rootScope.pageSlug;
+        if (typeof next.originalPath !== undefined && next.originalPath && next.originalPath.length > 1) {
             $rootScope.pageSlug = next.originalPath.substring(1);
             // substring until first slash
             if ($rootScope.pageSlug.indexOf('/') != -1) {
@@ -155,8 +157,6 @@ app.run(function($rootScope, $sce, $http, $location, $translate, $window, $route
         if ($rootScope.pageSlug == undefined) {
             $rootScope.pageSlug = $rootScope.homeSlug;
         }
-
-
 
         // set body class as "page-slug"
         $("body")
@@ -234,7 +234,7 @@ app.run(function($rootScope, $sce, $http, $location, $translate, $window, $route
     {
         var pageSlug = $rootScope.pageSlug;
         if (pageSlug == 'home') {
-            pageSlug = '';
+            pageSlug = '.';
         }
         var page = $rootScope.pagesData[pageSlug];
 
