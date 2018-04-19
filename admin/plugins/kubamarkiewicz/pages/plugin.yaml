@@ -6,8 +6,8 @@ plugin:
     homepage: ''
 permissions:
     manage_pages:
-        tab: 'kubamarkiewicz.pages::lang.permissions.manage'
-        label: 'kubamarkiewicz.pages::lang.permissions.manage'
+        tab: 'Headless CMS: manage pages'
+        label: 'Headless CMS: manage pages'
 navigation:
     main-menu-item:
         label: 'kubamarkiewicz.pages::lang.plugin.name'

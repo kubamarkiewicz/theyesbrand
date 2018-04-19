@@ -2,10 +2,11 @@ plugin:
     name: 'theyesbrand.proyectos::lang.plugin.name'
     description: 'theyesbrand.proyectos::lang.plugin.description'
     author: 'The Yes Brand'
-    icon: oc-icon-diamond
+    icon: oc-icon-th
     homepage: ''
 navigation:
     main-menu-item:
         label: Proyectos
         url: theyesbrand/proyectos/proyectos
-        icon: icon-diamond
+        icon: icon-th
+        order: '0'
