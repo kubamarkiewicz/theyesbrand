@@ -112,6 +112,7 @@ body > main {
 	animation-duration: 0.3s;
 	animation-fill-mode: forwards;
 	animation-timing-function: cubic-bezier(.46,1,1,1);
+	background-color: #f9f9f9;
 }
 @keyframes animation-page-transition {
     0%   {opacity: 0;}
