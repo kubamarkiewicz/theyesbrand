@@ -33,7 +33,7 @@ fields:
         imageHeight: '200'
         useCaption: 0
         thumbOptions:
-            mode: landscape
+            mode: auto
             extension: auto
         span: left
         type: fileupload
