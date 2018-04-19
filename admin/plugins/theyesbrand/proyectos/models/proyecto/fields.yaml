@@ -29,7 +29,7 @@ fields:
     image:
         label: 'Imágen pequeña'
         mode: image
-        imageWidth: '300'
+        imageWidth: '200'
         imageHeight: '150'
         useCaption: 0
         thumbOptions:
