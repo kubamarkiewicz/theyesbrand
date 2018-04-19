@@ -3,7 +3,7 @@
 
 window.config = window.config || {};
 
-window.config.defaultLanguage = 'en';
+window.config.defaultLanguage = 'es';
 
 window.config.api = {
 
@@ -11,8 +11,7 @@ window.config.api = {
         "getPages"              : "admin/api/pages",
         "getTranslations"		: "admin/api/translations",
         "missingTranslations"	: "admin/api/translations",
-        "getProyectos"			: "admin/api/proyectos",
-        "getProyecto"			: "admin/api/proyectos/:slug"
+        "getProyectos"			: "admin/api/proyectos"
 	}
 
 }
