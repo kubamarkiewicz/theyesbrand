@@ -29,9 +29,11 @@ fields:
     image:
         label: 'Imágen pequeña'
         mode: image
+        imageWidth: '300'
+        imageHeight: '200'
         useCaption: 0
         thumbOptions:
-            mode: crop
+            mode: landscape
             extension: auto
         span: left
         type: fileupload

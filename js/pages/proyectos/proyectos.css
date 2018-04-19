@@ -15,7 +15,7 @@ section#proyectos-index > a::after {
 	display: block;
 	padding-bottom: 84%;
 	background-color: rgba(0,0,0);
-	opacity: 0.2;
+	opacity: 0.1;
 	transition: opacity .1s cubic-bezier(.455,.03,.515,.955);
 }
 /* on hover, select */
