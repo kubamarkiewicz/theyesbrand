@@ -13,6 +13,7 @@ fields:
             extension: auto
         span: auto
         type: fileupload
+        commentAbove: 'Ancho mínimo 1920px'
     slug:
         label: URL
         span: auto
@@ -37,3 +38,4 @@ fields:
             extension: auto
         span: left
         type: fileupload
+        commentAbove: 'Mínimo 636x536 px'

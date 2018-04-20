@@ -232,6 +232,22 @@ app.run(function($rootScope, $sce, $http, $location, $translate, $window, $route
 
 
 
+    // load HomeBanners data
+    $rootScope.homeBannersData = null;
+    $rootScope.loadHomeBannersData = function()
+    {
+        $http({
+            method  : 'GET',
+            url     : config.api.urls.getHomeBanners
+        })
+        .then(function(response) {
+            $rootScope.homeBannersData = response.data;
+        });
+    }
+    $rootScope.loadHomeBannersData();
+
+
+
     // load proyectos data
     $rootScope.proyectosData = null;
     $rootScope.loadProyectosData = function()

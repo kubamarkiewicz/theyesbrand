@@ -11,7 +11,8 @@ window.config.api = {
         "getPages"              : "admin/api/pages",
         "getTranslations"		: "admin/api/translations",
         "missingTranslations"	: "admin/api/translations",
-        "getProyectos"			: "admin/api/proyectos"
+        "getProyectos"			: "admin/api/proyectos",
+        "getHomeBanners"		: "admin/api/home-banners"
 	}
 
 }

@@ -1,0 +1,43 @@
+fields:
+    name:
+        label: Nombre
+        span: left
+        required: 1
+        type: text
+    published:
+        label: Publicar
+        span: auto
+        default: 1
+        type: switch
+    text_color:
+        label: 'Color del texto'
+        span: right
+        type: balloon-selector
+        default: color-light
+    image:
+        label: Imagen
+        mode: image
+        imageWidth: '200'
+        imageHeight: '150'
+        useCaption: 0
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+        commentAbove: 'Ancho mínimo 1920px'
+    horizontal_align:
+        label: 'Alinear horizontalmente'
+        span: right
+        type: balloon-selector
+        default: align-left
+    vertical_align:
+        label: 'Alinear verticalmente'
+        span: right
+        type: balloon-selector
+        default: valign-center
+    content:
+        label: Texto
+        size: small
+        span: left
+        type: richeditor

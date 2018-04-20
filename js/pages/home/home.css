@@ -12,13 +12,19 @@ section#home-banners .banner {
 }
 section#home-banners .banner.align-left {
 }
+section#home-banners .banner.align-center {
+	text-align: center;
+}
 section#home-banners .banner.align-right {
 	text-align: right;
 }
-section#home-banners .banner.align-top {
+section#home-banners .banner.valign-top {
 	justify-content: flex-start;
 }
-section#home-banners .banner.align-bottom {
+section#home-banners .banner.valign-center {
+	justify-content: center;
+}
+section#home-banners .banner.valign-bottom {
 	justify-content: flex-end;
 }
 section#home-banners .banner.color-light {

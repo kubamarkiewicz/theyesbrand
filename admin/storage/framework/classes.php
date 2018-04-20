@@ -184,4 +184,11 @@
   'theyesbrand\\proyectos\\Controllers\\proyectos' => 'plugins/theyesbrand/proyectos/controllers/proyectos.php',
   'TheYesBrand\\Proyectos\\Models\\Proyecto' => 'plugins/theyesbrand/proyectos/models/Proyecto.php',
   'TheYesBrand\\Proyectos\\Api\\Proyectos' => 'plugins/theyesbrand/proyectos/api/Proyectos.php',
+  'theyesbrand\\bannershome\\Plugin' => 'plugins/theyesbrand/bannershome/Plugin.php',
+  'theyesbrand\\bannershome\\Controllers\\homebanners' => 'plugins/theyesbrand/bannershome/controllers/homebanners.php',
+  'TheYesBrand\\BannersHome\\Models\\HomeBanner' => 'plugins/theyesbrand/bannershome/models/HomeBanner.php',
+  'theyesbrand\\homebanners\\Plugin' => 'plugins/theyesbrand/homebanners/Plugin.php',
+  'theyesbrand\\homebanners\\Controllers\\homebanners' => 'plugins/theyesbrand/homebanners/controllers/homebanners.php',
+  'TheYesBrand\\HomeBanners\\Models\\HomeBanner' => 'plugins/theyesbrand/homebanners/models/HomeBanner.php',
+  'TheYesBrand\\HomeBanners\\Api\\HomeBanners' => 'plugins/theyesbrand/homebanners/api/HomeBanners.php',
 );

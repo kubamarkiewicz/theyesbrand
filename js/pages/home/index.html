@@ -1,42 +1,13 @@
 
 <section id="home-banners">
 
-	<div class="banner align-left color-dark" style="background-image: url(images/home/1.jpg)">
-		<div class="container">
-			<p><strong>UN BUEN DISEÑO</strong></p>
-			<p>ES UN BUEN NEGOCIO</p>
-		</div>
-	</div>
-
-	<div class="banner align-right color-light" style="background-image: url(images/home/2.jpg)">
-		<div class="container">
-			<p><strong>ACTÚA DE FORMA EMOCIONAL</strong></p>
-			<p>CREA UNA BONITA HISTORIA DE AMOR</p>
-			<p>Y tus seguidores hablarán de ello con pasión</p>
-		</div>
-	</div>
-
-	<div class="banner align-right color-dark" style="background-image: url(images/home/3.jpg)">
-		<div class="container">
-			<p><strong>HUMANIZA LA MARCA</strong></p>
-			<p>Haz que sienta, piense y se exprese igual que tu publico</p>
-		</div>
-	</div>
-
-	<div class="banner align-left align-top color-light" style="background-image: url(images/home/4.jpg)">
-		<div class="container">
-			<p><strong>EL PÚBLICO DECIDE</strong></p>
-			<p>QUE PRODUCTO DESEA COMPRAR</p>
-			<p>Ser visible, atractivo y comunicar de forma adecuada</p>
-		</div>
-	</div>
-
-	<div class="banner align-right align-bottom color-light" style="background-image: url(images/home/5.jpg)">
-		<div class="container">
-			<p><strong>LA MARCA LO ES TODO</strong></p>
-			<p>PARA ELLO HAY QUE SER CONSTANTE</p>
-			<p>Identidad más constancia igual a personalidad</p>
-		</div>
+	<div 
+		ng-repeat="banner in homeBannersData" 
+		ng-init="$last && onBannersRendered()"
+		class="banner {{ banner.horizontal_align }} {{ banner.vertical_align }} {{ banner.text_color }}" 
+		style="background-image: url({{ banner.image.path_resized }})"
+		>
+		<div class="container" ng-bind-html="trustAsHtml(banner.content)"></div>
 	</div>
 
 </section>

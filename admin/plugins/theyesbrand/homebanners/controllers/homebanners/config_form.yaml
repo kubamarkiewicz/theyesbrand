@@ -1,0 +1,11 @@
+name: HomeBanners
+modelClass: TheYesBrand\HomeBanners\Models\HomeBanner
+form: $/theyesbrand/homebanners/models/homebanner/fields.yaml
+defaultRedirect: theyesbrand/homebanners/homebanners
+create:
+    redirect: 'theyesbrand/homebanners/homebanners/update/:id'
+    redirectClose: theyesbrand/homebanners/homebanners
+update:
+    redirect: theyesbrand/homebanners/homebanners
+    redirectClose: theyesbrand/homebanners/homebanners
+preview: {  }

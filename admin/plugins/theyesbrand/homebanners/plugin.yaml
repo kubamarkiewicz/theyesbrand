@@ -1,0 +1,12 @@
+plugin:
+    name: 'Home Banners'
+    description: 'theyesbrand.homebanners::lang.plugin.description'
+    author: 'The Yes Brand'
+    icon: oc-icon-home
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Home Banners'
+        url: theyesbrand/homebanners/homebanners
+        icon: icon-home
+        order: '0'

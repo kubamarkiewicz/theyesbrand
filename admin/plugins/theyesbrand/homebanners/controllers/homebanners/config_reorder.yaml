@@ -1,0 +1,5 @@
+title: HomeBanners
+modelClass: TheYesBrand\HomeBanners\Models\HomeBanner
+nameFrom: name
+toolbar:
+    buttons: reorder_toolbar
