@@ -2,6 +2,7 @@ section#proyecto-images {
 }
 section#proyecto-images .image {
 	display: block;
+	width: 100%;
 }
 
 
