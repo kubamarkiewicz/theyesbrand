@@ -9,11 +9,11 @@ fields:
         span: auto
         default: 1
         type: switch
-    text_color:
-        label: 'Color del texto'
-        span: right
-        type: balloon-selector
-        default: color-light
+    content:
+        label: Texto
+        size: small
+        span: auto
+        type: richeditor
     image:
         label: Imagen
         mode: image
@@ -26,18 +26,18 @@ fields:
         span: auto
         type: fileupload
         commentAbove: 'Ancho mínimo 1920px'
+    text_color:
+        label: 'Color del texto'
+        span: left
+        type: balloon-selector
+        default: color-light
     horizontal_align:
-        label: 'Alinear horizontalmente'
-        span: right
+        label: 'Alinear texto horizontalmente'
+        span: left
         type: balloon-selector
         default: align-left
     vertical_align:
-        label: 'Alinear verticalmente'
-        span: right
+        label: 'Alinear texto verticalmente'
+        span: left
         type: balloon-selector
         default: valign-center
-    content:
-        label: Texto
-        size: small
-        span: left
-        type: richeditor

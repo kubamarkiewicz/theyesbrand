@@ -28,7 +28,7 @@ fields:
         default: 1
         type: switch
     image:
-        label: 'Imágen pequeña'
+        label: 'Imágen de la portada'
         mode: image
         imageWidth: '200'
         imageHeight: '150'
