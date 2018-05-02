@@ -39,8 +39,9 @@ tabs:
         background_color:
             label: 'Color del fondo'
             availableColors:
-                - '#FFFFFF'
+                - '#000000'
             span: left
+            default: '#000000'
             type: colorpicker
             tab: Descripción
         images:

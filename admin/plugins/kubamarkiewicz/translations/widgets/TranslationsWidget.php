@@ -189,7 +189,8 @@ class TranslationsWidget extends WidgetBase
         }
         $model->save();
 
-        \Flash::success('Jobs done!');
+        \Flash::success(trans('backend::lang.form.update_success', ['name' => trans('kubamarkiewicz.pages::lang.page.tab_translations')]));
+
 
         $this->vars['item'] = $model;
         $this->vars['lang'] = Request::input('lang') ? Request::input('lang') : Locale::getDefault()->code;
