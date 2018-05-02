@@ -43,31 +43,24 @@ class Translation extends Model
      * Relations
      */
     public $attachOne = [
-        'file' => 'System\Models\File'
+        'image' => 'System\Models\File'
     ];  
 
-    protected $jsonable = ['translation_json', 'parameters'];
+    public $attachMany = [
+        'images' => 'System\Models\File'
+    ];
+
+    protected $jsonable = ['json_data', 'parameters'];
 
 
-    public function getFullKeyAttribute()
+    public function getKeyAttribute()
     {
         if ($this->parent_id) {
             $parent = $this->getParent()->first();
-            return $parent ? $parent->fullKey.'.'.$this->code : false;
+            return $parent ? $parent->key.'.'.$this->code : false;
         }
         else {
             return $this->code;
-        }
-    }
-
-    public function getPathAttribute()
-    {
-        if ($this->parent_id) {
-            $parent = $this->getParent()->first();
-            return $parent->fullKey;
-        }
-        else {
-            return '';
         }
     }
 

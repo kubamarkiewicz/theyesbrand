@@ -2,6 +2,7 @@
 
 use Backend\Classes\Controller;
 use BackendMenu;
+use KubaMarkiewicz\Translations\Widgets\TranslationsWidget;
 
 class Pages extends Controller
 {
@@ -26,6 +27,10 @@ class Pages extends Controller
         $this->addJs('/plugins/kubamarkiewicz/pages/assets/js/functions.js');
 
         BackendMenu::setContext('KubaMarkiewicz.Pages', 'main-menu-item');
+
+        $translationsWidget = new TranslationsWidget($this);
+        $translationsWidget->alias = 'translationsWidget';
+        $translationsWidget->bindToController();
     }
 
 
@@ -36,6 +41,8 @@ class Pages extends Controller
             $model->parent_id = $this->params[1];
         }
     }
+
+
 
 
 }

@@ -25,7 +25,7 @@ class Page extends Model
 
     public $implement = ['RainLab.Translate.Behaviors.TranslatableModel']; 
 
-    public $translatable = ['name', 'meta_title', 'meta_description'];
+    public $translatable = ['meta_title', 'meta_description'];
 
     /*
      * Relations

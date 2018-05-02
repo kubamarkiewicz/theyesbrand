@@ -22,7 +22,7 @@ fields:
         size: ''
         span: left
         type: textarea
-    file:
+    image:
         label: 'Image upload'
         mode: image
         imageWidth: '200'
@@ -33,3 +33,10 @@ fields:
             extension: auto
         span: left
         type: fileupload
+
+# tabs:
+#     fields:
+#         children:
+#             label: Children
+#             type: partial
+#             tab: Children

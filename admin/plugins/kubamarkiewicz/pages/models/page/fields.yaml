@@ -11,13 +11,17 @@ fields:
         type: switch
 tabs:
     fields:
-        content:
-            label: ''
-            size: giant
-            span: auto
-            stretch: 1
-            type: richeditor
-            tab: 'kubamarkiewicz.pages::lang.page.tab_content'
+        translations:
+            type: partial
+            path: $/kubamarkiewicz/pages/controllers/pages/_translations_field.htm
+            tab: 'kubamarkiewicz.pages::lang.page.tab_translations'
+        # content:
+        #     label: ''
+        #     size: giant
+        #     span: auto
+        #     stretch: 1
+        #     type: richeditor
+        #     tab: 'kubamarkiewicz.pages::lang.page.tab_content'
         parent:
             label: 'kubamarkiewicz.pages::lang.page.parent'
             oc.commentPosition: ''
@@ -31,9 +35,6 @@ tabs:
             label: 'kubamarkiewicz.pages::lang.page.slug'
             span: left
             required: 1
-            preset:
-                field: name
-                type: slug
             type: text
             comment: 'kubamarkiewicz.pages::lang.page.slug_comment'
             tab: 'kubamarkiewicz.pages::lang.page.tab_url'

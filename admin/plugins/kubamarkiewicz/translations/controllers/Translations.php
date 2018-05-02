@@ -2,11 +2,7 @@
 
 use Backend\Classes\Controller;
 use BackendMenu;
-use KubaMarkiewicz\Translations\Models\Translation;
-use Backend\Models\BrandSetting;
-use Flash;
-use Lang;
-use RainLab\Translate\Classes\Translator;
+use KubaMarkiewicz\Translations\Widgets\TranslationsWidget;
 
 
 class Translations extends Controller
@@ -14,7 +10,8 @@ class Translations extends Controller
     public $implement = [
         'Backend\Behaviors\ListController',
         'Backend\Behaviors\FormController',
-        'Backend.Behaviors.ReorderController'
+        'Backend.Behaviors.ReorderController',
+        // 'Backend.Behaviors.RelationController'
     ];
     
     public $listConfig = 'config_list.yaml';
@@ -25,48 +22,22 @@ class Translations extends Controller
     {
         parent::__construct();
 
-        $this->addCss('/plugins/kubamarkiewicz/translations/assets/css/styles.css');
-
         BackendMenu::setContext('KubaMarkiewicz.Translations', 'main-menu-item');
+
+        if (post('form_mode')) {
+            $this->asExtension('FormController')->create();
+        }
     }
 
 
-    public function section($id = null)
+    public function section()
     {
-        if ($id) {
-            $row = Translation::find($id);
-        }
-        else {
-            $row = null;
-        }
-
-        $translations = Translation::select()->getNested();
-
-        $this->vars['id'] = $id;
-        $this->vars['section'] = $row;
-        $this->vars['sections'] = $translations;
-        $this->vars['secondary_color'] = BrandSetting::get('secondary_color');
-
-
-        if ($row) {
-
-            /*
-             * Make form widget
-             */
-            
-            $config = new \stdClass;
-            $config->model = $row;
-            $config->fields = [];
-            $config->data = [];
-
-
-            $slug = 'translation';
-            $config->fields[$slug] = [
-                'label' => 'test',
-                'type' => 'kubamarkiewicz_translations_section'
-            ];
-            $config->data[$slug] = $row->translation;
-
+        /*
+         * Make widget
+         */
+        $myWidget = new TranslationsWidget($this);
+        $myWidget->bindToController();
+        $this->vars['myWidget'] = $myWidget;
 
 /*
             if ($row->type == Translation::TYPE_REPEATER) {
@@ -179,66 +150,14 @@ class Translations extends Controller
                 }
             }
 */
-            $form = $this->makeWidget('Backend\Widgets\Form', $config);
-            $form->bindToController();
-
-            $this->vars['form'] = $form;
-            $this->vars['hasFields'] = (bool)$config->fields;
-            
-        }
     }
 
 
-    public function section_onSave($section)
-    {
-        return;
-        // dump(post()); exit;
 
-        $data = post();
-        $error = false;
-
-        $cmsLang = Lang::getLocale();
-
-        foreach ($data['RLTranslate'] as $lang => $fields) {
-
-            // echo $lang;
-
-            Translator::instance()->setLocale($lang);
-
-            foreach ($fields as $key => $value) if (substr($key, 0, 12) == 'translation_') {
-                // echo $value;
-                $key = substr($key, 12);
-
-                $row = Translation::find($key);
-                // dump($row);
-                if ($row) {
-                    if (!$row->type) {
-                        $value = nl2br($value);
-                    }
-                    $row->translation = $value;
-                    $row->save();
-                }
-                else {
-                    $error = true;
-                }
-            }
-        }
-
-        Translator::instance()->setLocale($cmsLang);
-
-        if ($error) {
-            Flash::error('Error');
-        } 
-        else {
-            Flash::success(Lang::get('backend::lang.form.update_success', ['name' => Lang::get('kubamarkiewicz.translations::lang.plugin.name')]));
-        } 
-        
-    }
-
-
+    // implement "add child" action
     public function formExtendModel($model)
     {
-        // get parent ID from URL parameter
+        // set parent based on URL parameter
         if (isset($this->params[1])) {
             $model->parent_id = $this->params[1];
         }

@@ -1,0 +1,23 @@
+
+<section class="preview <?=$item->type?>">
+	<label><?=$item->code?></label>
+	<a 
+		href="javascript:"
+		data-request="<?= $this->getEventHandler('onEdit') ?>"
+		data-request-data="id: '<?=$item->id?>'"
+		class="edit"
+	    data-delay="0"
+	    title="Edit"
+	    onclick="saveAndCloseForms()"
+		>
+		<?php if ($item->type == \KubaMarkiewicz\Translations\Models\Translation::TYPE_IMAGE_MEDIAFINDER) : ?>
+			<?php if ($item->translation): ?>
+				<img src="<?=url('/').\Config::get('cms.storage.media.path').$item->translation?>" alt="">
+			<?php else: ?>
+				<div class="placeholder"><span class="find-button-icon oc-icon-image"></span></div>
+			<?php endif ?>
+		<?php else: ?>
+			<?=$item->getTranslateAttribute('translation', $lang)?>
+		<?php endif ?>
+	</a>
+</section>

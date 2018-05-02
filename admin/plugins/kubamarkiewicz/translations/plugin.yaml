@@ -9,10 +9,4 @@ navigation:
         label: 'kubamarkiewicz.translations::lang.plugin.name'
         url: /kubamarkiewicz/translations/translations/section
         icon: icon-file-text-o
-        permissions:
-            - manage_translations
         order: '9'
-permissions:
-    manage_translations:
-        tab: 'Headless CMS: manage translations'
-        label: 'Headless CMS: manage translations'
