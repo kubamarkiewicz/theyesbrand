@@ -26,6 +26,8 @@ class Proyecto extends Model
      * @var string The database table used by the model.
      */
     public $table = 'theyesbrand_proyectos_proyectos';
+    
+    public $implement = ['RainLab.Translate.Behaviors.TranslatableModel']; 
 
     /*
      * Relations
@@ -36,4 +38,7 @@ class Proyecto extends Model
     public $attachMany = [
         'images' => 'System\Models\File'
     ];
+
+    public $translatable = ['content'];
+
 }

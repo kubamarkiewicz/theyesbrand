@@ -4,16 +4,6 @@ fields:
         span: left
         required: 1
         type: text
-    images:
-        label: Imágenes
-        mode: image
-        useCaption: true
-        thumbOptions:
-            mode: crop
-            extension: auto
-        span: auto
-        type: fileupload
-        commentAbove: 'Ancho mínimo 1920px'
     slug:
         label: URL
         span: auto
@@ -27,15 +17,39 @@ fields:
         span: left
         default: 1
         type: switch
-    image:
-        label: 'Imágen de la portada'
-        mode: image
-        imageWidth: '200'
-        imageHeight: '150'
-        useCaption: 0
-        thumbOptions:
-            mode: auto
-            extension: auto
-        span: left
-        type: fileupload
-        commentAbove: 'Mínimo 636x536 px'
+tabs:
+    fields:
+        image:
+            tab: 'Imágen de portada'
+            mode: image
+            imageWidth: '300'
+            imageHeight: '200'
+            useCaption: 0
+            thumbOptions:
+                mode: auto
+                extension: auto
+            span: auto
+            type: fileupload
+            commentAbove: 'Mínimo 636x536 px'
+        content:
+            tab: Descripción
+            size: large
+            span: full
+            type: richeditor
+        background_color:
+            label: 'Color del fondo'
+            availableColors:
+                - '#FFFFFF'
+            span: left
+            type: colorpicker
+            tab: Descripción
+        images:
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            commentAbove: 'Ancho mínimo 1920px'
+            tab: Imágenes
