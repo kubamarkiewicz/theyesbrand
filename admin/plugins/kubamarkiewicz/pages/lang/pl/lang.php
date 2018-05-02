@@ -1,7 +1,7 @@
 <?php return [
     'plugin' => [
         'name' => 'Strony',
-        'description' => 'Page plugin for headless CMS'
+        'description' => 'Manage pages for single-page application'
     ],
     'page' => [
         'name' => 'Nazwa strony',
@@ -11,7 +11,7 @@
         'slug' => 'Adres podstrony',
         'slug_comment' => 'Użyj "home" dla strony głównej',
         'url' => 'URL',
-        'tab_metadata' => 'Metadane',
+        'tab_metadata' => 'Metadane i SEO',
         'meta_title' => 'Tytuł strony',
         'meta_description' => 'Opis',
         'tab_content' => 'Treść',

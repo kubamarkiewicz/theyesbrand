@@ -9,4 +9,4 @@ navigation:
         label: Proyectos
         url: theyesbrand/proyectos/proyectos
         icon: icon-th
-        order: '1'
+        order: '2'

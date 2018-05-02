@@ -1,7 +1,7 @@
 <?php return [
     'plugin' => [
         'name' => 'Pages',
-        'description' => 'Page plugin for headless CMS'
+        'description' => 'Manage pages for single-page application'
     ],
     'page' => [
         'name' => 'Page name',
@@ -11,7 +11,7 @@
         'slug' => 'Page slug',
         'slug_comment' => 'Use "home" for homepage',
         'url' => 'URL',
-        'tab_metadata' => 'Metadata',
+        'tab_metadata' => 'Metadata & SEO',
         'tab_translations' => 'Translations',
         'meta_title' => 'Page title',
         'meta_description' => 'Description',

@@ -14,7 +14,7 @@
 			<?php if ($item->translation): ?>
 				<img src="<?=url('/').\Config::get('cms.storage.media.path').$item->translation?>" alt="">
 			<?php else: ?>
-				<div class="placeholder"><span class="find-button-icon oc-icon-image"></span></div>
+				<div class="placeholder"><span class="upload-button-icon oc-icon-upload large-icon"></span></div>
 			<?php endif ?>
 		<?php else: ?>
 			<?=$item->getTranslateAttribute('translation', $lang)?>

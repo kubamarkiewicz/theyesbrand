@@ -1,4 +1,4 @@
-<?php if ($children) : ?>
+<?php if (count($children)) : ?>
 
 
 	<div class="language-switch">
@@ -15,7 +15,14 @@
 		
 	</div>
 
-	<button type="button" class="btn btn-primary" onclick="saveAndCloseForms()">Save</button>
+	<button
+        type="button"
+        onclick="saveAndCloseForms()"
+        data-hotkey="ctrl+s, cmd+s"
+        data-load-indicator="<?= e(trans('backend::lang.form.saving')) ?>"
+        class="btn btn-primary">
+        <?= e(trans('backend::lang.form.save')) ?>
+    </button>
 	<br>
 	<br>
 

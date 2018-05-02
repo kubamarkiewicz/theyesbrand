@@ -191,4 +191,5 @@
   'theyesbrand\\homebanners\\Controllers\\homebanners' => 'plugins/theyesbrand/homebanners/controllers/homebanners.php',
   'TheYesBrand\\HomeBanners\\Models\\HomeBanner' => 'plugins/theyesbrand/homebanners/models/HomeBanner.php',
   'TheYesBrand\\HomeBanners\\Api\\HomeBanners' => 'plugins/theyesbrand/homebanners/api/HomeBanners.php',
+  'KubaMarkiewicz\\Translations\\Widgets\\TranslationsWidget' => 'plugins/kubamarkiewicz/translations/widgets/TranslationsWidget.php',
 );
