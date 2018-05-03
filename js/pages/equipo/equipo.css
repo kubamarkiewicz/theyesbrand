@@ -11,7 +11,7 @@ section#equipo .description {
 	transform: translateY(calc(-100% + 40px));
 	background-color: rgba(104, 104, 104, 0.71);
 	color: #ffffff;
-	padding: 60px 30px;
+	padding: 60px;
 	max-width: 1200px;
 	left: 10%;
 	width: 50%;
@@ -36,6 +36,14 @@ section#equipo-slides .slick-slide:not(.slick-current) {
 		width: 100%;
 		left: 0;
 		transform: none;
+	}
+
+}
+
+@media (min-width: 1600px) {
+
+	section#equipo .description {
+		padding: 90px;
 	}
 
 }
