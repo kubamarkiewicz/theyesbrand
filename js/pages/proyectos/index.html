@@ -1,5 +1,5 @@
 <section id="proyectos-index">
 
-	<a ng-repeat="proyecto in proyectosData" href="proyectos/{{ proyecto.slug }}" style="background-image: url({{ proyecto.image.path_resized }})"></a>
+	<a ng-repeat="proyecto in proyectosData" href="proyectos/{{ proyecto.slug }}" style="background-image: url({{ proyecto.image.path_resized }})" title="{{ proyecto.name }}"></a>
 
 </section>
