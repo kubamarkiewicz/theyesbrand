@@ -9,6 +9,8 @@ navigation:
         label: API
         url: ../api
         icon: icon-cogs
+        permissions:
+            - access_api
 permissions:
     access_api:
         tab: 'Access API'
