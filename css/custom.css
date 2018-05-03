@@ -84,6 +84,13 @@ body.loading > footer {
 @media (max-width: 991.98px) {
 
 }
+@media (min-width: 1600px) {
+
+	html { 
+		font-size: 23px; /* define 1rem */
+	}
+
+}
 
 /***********************************************/
 /* Layout divs                                 */
@@ -192,6 +199,7 @@ body > header .container {
     align-items: flex-end;
     height: 100%;
     display: flex;
+    font-size: 14px;
 } 
 #logo {
 }
