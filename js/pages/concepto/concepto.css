@@ -7,11 +7,11 @@ section#concepto-header {
 section#concepto-images {
 	text-align: center;
 	background-color: #ffffff;
-	padding: 0 30px;
+	padding: 45px 30px;
 }
 section#concepto-images img {
 	/* display: block; */
-	margin: 90px 0 0 0;
+	margin: 45px 0;
 }
 
 /* responsive */
