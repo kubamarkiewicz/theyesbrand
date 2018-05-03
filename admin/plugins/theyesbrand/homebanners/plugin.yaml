@@ -9,4 +9,4 @@ navigation:
         label: 'Home Banners'
         url: theyesbrand/homebanners/homebanners
         icon: icon-home
-        order: '1'
+        order: '2'
