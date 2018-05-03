@@ -87,7 +87,7 @@
 	text-transform: uppercase;
 	font-size: 12px;
 	color: #666666;
-	cursor: pointer;
+	display: block;
 }
 #kubamarkiewicz-translations-widget > main article {
 	margin-bottom: 20px;
@@ -111,10 +111,11 @@
 	text-decoration: none;
 }
 
-#kubamarkiewicz-translations-widget > main article section.preview.image-mediafinder a {
+#kubamarkiewicz-translations-widget > main article section.preview.image-mediafinder a.edit {
 	cursor: pointer;
+	display: inline-block;
 }
-#kubamarkiewicz-translations-widget > main article section.preview.image-mediafinder a img {
+#kubamarkiewicz-translations-widget > main article section.preview.image-mediafinder a.edit img {
 	max-height: 75px;
 }
 

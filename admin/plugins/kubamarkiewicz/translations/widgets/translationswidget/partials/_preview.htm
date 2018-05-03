@@ -6,9 +6,11 @@
 		data-request="<?= $this->getEventHandler('onEdit') ?>"
 		data-request-data="id: '<?=$item->id?>'"
 		class="edit"
-	    data-delay="0"
-	    title="Edit"
 	    onclick="saveAndCloseForms()"
+	    data-toggle="tooltip"
+	    data-placement="bottom"
+	    data-delay="0"
+	    title="Editar"
 		>
 		<?php if ($item->type == \KubaMarkiewicz\Translations\Models\Translation::TYPE_IMAGE_MEDIAFINDER) : ?>
 			<?php if ($item->translation): ?>

@@ -20,9 +20,10 @@ class Translations extends Controller
         $return = [];
 
         foreach ($result as $item) {
-            $path = explode('.', $item->fullKey);
+            // echo '<br>id: '.$item->id;
+            $path = explode('.', $item->key);
             $parent = &$return;
-            foreach ($path as $slug) {
+            foreach ($path as $slug) if ($slug) { 
                 $parent = (array) $parent;
                 $parent = &$parent[$slug];
             }
@@ -34,6 +35,9 @@ class Translations extends Controller
                         $image = new Image($file);
                         $image->resize($item->parameters['width'], $item->parameters['height'], ['mode' => isset($item->parameters['mode']) ? $item->parameters['mode'] : 'auto']);
                         $value = (string) $image;
+                    }
+                    else {
+                        $value = url($file);
                     }
                     break;
 /*                case Translation::TYPE_IMAGE_UPLOAD:

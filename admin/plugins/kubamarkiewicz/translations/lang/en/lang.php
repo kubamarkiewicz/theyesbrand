@@ -10,5 +10,5 @@
     'code' => 'Code',
     'type' => 'Type',
     'translation' => 'Translation',
-    'add_child' => 'Add child',
+    'add_child' => 'Add child'
 ];

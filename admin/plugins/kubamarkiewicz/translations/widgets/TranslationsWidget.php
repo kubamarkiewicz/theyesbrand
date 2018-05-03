@@ -108,7 +108,7 @@ class TranslationsWidget extends WidgetBase
                     'translation' => [
                         'label' => $model->code,
                         'type' => 'richeditor',
-                        'size' => 'small',
+                        'size' => 'large',
                         'toolbarButtons' => 'paragraphFormat|bold|italic|clearFormatting|align|outdent|indent|formatOL|formatUL|insertHR|insertLink|insertFile|insertImage|insertVideo|insertTable|fullscreen|html'
                     ]
                 ];
