@@ -1,13 +1,8 @@
 app.controller('EquipoController', function($scope, $rootScope, $http, $routeParams, config, $translate) {  
    
-	// $scope.translations = [];
-
-/*    $translate(['pages.equipo.imagen del fondo', 'pages.equipo.texto']).then(function (translations) {
-        $scope.translations = translations;
-        console.log($scope.translations);
-    });*/
 
     $(document).ready(function(){
+
 		$('#equipo-slides').slick({
 			arrows: false,
 			infinite: true,
@@ -26,6 +21,7 @@ app.controller('EquipoController', function($scope, $rootScope, $http, $routePar
 				}
 			]
 		});
+		
 	});
 
 });

@@ -118,6 +118,10 @@ app.config(function ($routeProvider, $locationProvider) {
             controller: 'EquipoController', 
             templateUrl: 'js/pages/equipo/index.html' 
         })   
+        .when('/concepto', { 
+            controller: 'ConceptoController', 
+            templateUrl: 'js/pages/concepto/index.html' 
+        })   
         .otherwise({ 
             redirectTo: '/' 
         }); 

@@ -1,0 +1,27 @@
+
+section#concepto-header {
+	background-color: rgba(148, 148, 148, 0.71);
+	color: #ffffff;
+	padding: 110px 0;
+}
+section#concepto-images {
+	text-align: center;
+	background-color: #ffffff;
+	padding: 0 30px;
+}
+section#concepto-images img {
+	/* display: block; */
+	margin: 90px 0 0 0;
+}
+
+/* responsive */
+@media (max-width: 992px) {
+
+
+}
+
+@media (min-width: 1600px) {
+
+
+
+}
