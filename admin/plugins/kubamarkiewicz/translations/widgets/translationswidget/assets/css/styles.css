@@ -101,6 +101,7 @@
 	display: block;
 	color: inherit;
 	cursor: text;
+	min-height: 35px;
 }
 #kubamarkiewicz-translations-widget > main article section.preview a.edit:hover {
 	text-decoration: none;

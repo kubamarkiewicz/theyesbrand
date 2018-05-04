@@ -9,10 +9,6 @@
 
 <section id="equipo-slides">
 
-	<img src="http://localhost:8888/2018/theyesbrand/data/equipo/slides/1.jpg" alt="">
-	<img src="http://localhost:8888/2018/theyesbrand/data/equipo/slides/2.jpg" alt="">
-	<img src="http://localhost:8888/2018/theyesbrand/data/equipo/slides/3.jpg" alt="">
-	<img src="http://localhost:8888/2018/theyesbrand/data/equipo/slides/4.jpg" alt="">
-	<img src="http://localhost:8888/2018/theyesbrand/data/equipo/slides/5.jpg" alt="">
+	<img ng-repeat="image in pagesData.equipo.gallery" ng-init="$last && onGalleryRendered()" src="{{ image.path }}" alt="{{ image.title }}">
 
 </section>

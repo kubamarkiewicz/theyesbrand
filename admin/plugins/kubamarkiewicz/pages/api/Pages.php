@@ -12,7 +12,7 @@ class Pages extends Controller
     {
         Translator::instance()->setLocale(Input::get('lang'));
 
-        $query = Page::where('published', '1');
+        $query = Page::where('published', '1')->with('gallery');
         $result = $query->get(); 
         $pages = $result[0]->scopeGetNested($query);
 
