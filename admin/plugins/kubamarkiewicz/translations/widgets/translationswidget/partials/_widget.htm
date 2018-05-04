@@ -1,7 +1,7 @@
 
 <section id="kubamarkiewicz-translations-widget">
 
-	<?php if (!$page) : ?>
+	<?php if ($tree && !$page) : ?>
 		<aside>
 			<?= $this->makePartial('tree') ?>
 		</aside>	

@@ -25,6 +25,7 @@ class TranslationsWidget extends WidgetBase
     {
         $page = null;
         $id = null;
+        $tree = null;
         if ($pageSlug) {
             // todo: add support for nested pages
             $parentId = Translation::where('code', 'pages')
@@ -33,14 +34,13 @@ class TranslationsWidget extends WidgetBase
             $page = Translation::where('code', $pageSlug)
                                 ->where('parent_id', $parentId)
                                 ->first();
-        }
-
-        if ($page) {
-            $tree = $page->children;
-            $id = $page->id;
-            $this->vars['children'] = $page->children;
-            $this->vars['languages'] = Locale::listEnabled();
-            $this->vars['lang'] = Request::input('lang') ? Request::input('lang') : Locale::getDefault()->code;
+            if ($page) {
+                $tree = $page->children;
+                $id = $page->id;
+                $this->vars['children'] = $page->children;
+                $this->vars['languages'] = Locale::listEnabled();
+                $this->vars['lang'] = Request::input('lang') ? Request::input('lang') : Locale::getDefault()->code;
+            }
         }
         else {
             $tree = Translation::select()->getNested();
