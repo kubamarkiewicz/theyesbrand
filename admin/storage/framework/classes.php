@@ -194,4 +194,5 @@
   'KubaMarkiewicz\\Translations\\Widgets\\TranslationsWidget' => 'plugins/kubamarkiewicz/translations/widgets/TranslationsWidget.php',
   'kubamarkiewicz\\contact\\Plugin' => 'plugins/kubamarkiewicz/contact/Plugin.php',
   'KubaMarkiewicz\\Contact\\Models\\Settings' => 'plugins/kubamarkiewicz/contact/models/Settings.php',
+  'KubaMarkiewicz\\Contact\\Api\\Contact' => 'plugins/kubamarkiewicz/contact/api/Contact.php',
 );

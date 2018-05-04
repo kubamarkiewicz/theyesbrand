@@ -171,7 +171,9 @@ body > footer {
 /* Overwritten Bootstrap Styles                */
 /***********************************************/
 
-
+.lead {
+	font-weight: normal;
+}
 
 @media (max-width: 768px) {
 
@@ -186,6 +188,29 @@ body > footer {
 /***********************************************/
 /* Forms                                       */
 /***********************************************/
+
+.form-control {
+    border-radius: 0;
+    /*background-color: #f0f0f0;*/
+    box-shadow: none;
+    border: 1px solid rgba(104, 104, 104, 1);
+    height: 38px;
+}
+.form-group {
+    margin-bottom: 5px;
+}
+textarea.form-control {
+	height: 80px;
+}
+.btn {
+    border-radius: 0;
+    background-color: rgba(104, 104, 104, 1);
+    color: #ffffff;
+}
+.btn.focus, .btn:focus, .btn:hover {
+	color: #ffffff;
+	opacity: 0.9;
+}
 
 
 /***********************************************/

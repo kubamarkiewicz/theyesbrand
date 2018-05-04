@@ -1,5 +1,14 @@
+section#contacto {
+	background-color: #ffffff;
+	padding: 40px 0;
+}
+section#contacto .privacy {
+	margin-top: 30px;
+} 
 
-
+section#contacto-map {
+	height: 510px;
+}
 
 /* responsive */
 @media (max-width: 992px) {
