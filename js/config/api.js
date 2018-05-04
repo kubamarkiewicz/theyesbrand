@@ -12,7 +12,8 @@ window.config.api = {
         "getTranslations"		: "admin/api/translations",
         "missingTranslations"	: "admin/api/translations",
         "getProyectos"			: "admin/api/proyectos",
-        "getHomeBanners"		: "admin/api/home-banners"
+        "getHomeBanners"		: "admin/api/home-banners",
+        "sendContact"          	: "admin/api/contact"
 	}
 
 }

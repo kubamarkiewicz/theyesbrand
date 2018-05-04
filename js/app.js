@@ -125,6 +125,10 @@ app.config(function ($routeProvider, $locationProvider) {
         .when('/concepto', { 
             controller: 'ConceptoController', 
             templateUrl: 'js/pages/concepto/index.html' 
+        })    
+        .when('/contacto', { 
+            controller: 'ContactoController', 
+            templateUrl: 'js/pages/contacto/index.html' 
         })   
         .otherwise({ 
             redirectTo: '/' 
