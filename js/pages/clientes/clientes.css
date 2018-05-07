@@ -6,7 +6,10 @@ section#clientes-logos {
 section#clientes-logos .container {
 	padding: 40px 0;
 }
-section#clientes-logos img {width: 300px;height: 150px;}
+section#clientes-logos img {
+	width: 300px;
+	height: 150px;
+}
 
 /* responsive */
 @media (max-width: 992px) {
