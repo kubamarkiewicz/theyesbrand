@@ -8,13 +8,13 @@ section#equipo img.big {
 section#equipo .description {
 	position: absolute;
 	z-index: 2;
-	transform: translateY(calc(-100% + 40px));
+	transform: translateY(-100%);
 	background-color: rgba(104, 104, 104, 0.71);
 	color: #ffffff;
-	padding: 60px;
-	max-width: 1200px;
-	left: 10%;
-	width: 50%;
+	padding: 30px 60px 20px 60px;
+	/* max-width: 1200px; */
+	/* left: 10%; */
+	width: 100%;
 }
 
 section#equipo-slides {
@@ -28,7 +28,7 @@ section#equipo-slides .slick-slide:not(.slick-current) {
 	cursor: pointer;
 }
 
-/* lg devices */
+/* responsive */
 @media screen and (max-width: 992px) {
 
 	section#equipo .description {
@@ -36,6 +36,7 @@ section#equipo-slides .slick-slide:not(.slick-current) {
 		width: 100%;
 		left: 0;
 		transform: none;
+		padding: 30px 30px 20px 30px;
 	}
 
 }
@@ -43,7 +44,7 @@ section#equipo-slides .slick-slide:not(.slick-current) {
 @media (min-width: 1600px) {
 
 	section#equipo .description {
-		padding: 90px;
+		padding: 45px 90px 35px 90px;
 	}
 
 }
