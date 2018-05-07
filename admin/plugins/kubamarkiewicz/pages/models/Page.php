@@ -53,6 +53,9 @@ class Page extends Model
     protected $hidden = ['children'];
 
 
+    const HOME_SLUG = 'home'; 
+
+
     public function getUrlAttribute()
     {
         if ($this->parent_id) {
@@ -61,8 +64,14 @@ class Page extends Model
             return $parent->url.'/'.$this->slug;
         }
         else {
-            return $this->slug;
+            return $this->slug == self::HOME_SLUG ? '' : $this->slug;
         }
+    }
+
+
+    public function getFullUrlAttribute()
+    {
+        return dirname(url('/')).'/'.$this->url;
     }
 
 

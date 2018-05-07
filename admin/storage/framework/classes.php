@@ -195,4 +195,6 @@
   'kubamarkiewicz\\contact\\Plugin' => 'plugins/kubamarkiewicz/contact/Plugin.php',
   'KubaMarkiewicz\\Contact\\Models\\Settings' => 'plugins/kubamarkiewicz/contact/models/Settings.php',
   'KubaMarkiewicz\\Contact\\Api\\Contact' => 'plugins/kubamarkiewicz/contact/api/Contact.php',
+  'KubaMarkiewicz\\Pages\\Api\\Metadata' => 'plugins/kubamarkiewicz/pages/api/Metadata.php',
+  'TheYesBrand\\Proyectos\\Api\\Metadata' => 'plugins/theyesbrand/proyectos/api/Metadata.php',
 );
