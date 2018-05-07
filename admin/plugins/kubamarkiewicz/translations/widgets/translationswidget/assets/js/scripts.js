@@ -43,5 +43,13 @@ function setFieldsLangFromSession()
 }
 
 
+	
+function onEditClick(id) 
+{
+	saveAndCloseForms();
+	$.request('kubamarkiewicz_translations_widget::onEdit', {data: {id: id}});
+}
+
+
 
 
