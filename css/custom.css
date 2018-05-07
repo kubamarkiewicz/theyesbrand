@@ -65,6 +65,10 @@ img {
 }
 img.full {
 	width: 100%;
+	animation-name: fade-in;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(.46,1,1,1);
 }
 
 
@@ -93,6 +97,15 @@ body.loading > footer {
 		font-size: 23px; /* define 1rem */
 	}
 
+}
+
+/***********************************************/
+/* Animations                                  */
+/***********************************************/
+
+@keyframes fade-in {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 /***********************************************/
@@ -161,11 +174,6 @@ body > footer {
 	}
 
 }
-
-/***********************************************/
-/* Page transitions                            */
-/***********************************************/
-
 
 /***********************************************/
 /* Overwritten Bootstrap Styles                */
