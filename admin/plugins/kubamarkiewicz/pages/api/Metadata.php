@@ -31,6 +31,10 @@ class Metadata extends Controller
 </head>
 <body></body>
 </html>
+        <?php else : ?>
+
+        Page not found: <?=$url?>
+
         <?php endif;
     }
 

@@ -283,11 +283,7 @@ app.run(function($rootScope, $sce, $http, $location, $translate, $window, $route
     // set metadata
     $rootScope.setMetadata = function()
     {
-        var pageSlug = $rootScope.pageSlug;
-        if (pageSlug == 'home') {
-            pageSlug = '.';
-        }
-        var page = $rootScope.pagesData[pageSlug];
+        var page = $rootScope.pagesData[$rootScope.pageSlug];
 
         if (page) {
             document.title = page.meta_title;
