@@ -37,6 +37,7 @@ class Proyecto extends Model
         'image' => 'System\Models\File'
     ];
     public $attachMany = [
+        // 'images' => 'System\Models\File'
         'images' => 'KubaMarkiewicz\Api\Models\File'
     ];
 

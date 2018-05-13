@@ -29,7 +29,4 @@ class File extends FileBase
         return implode('/', array_slice(str_split(md5($this->disk_name), 3), 0, 3)) . '/';
     }
 
-
-    
-
 }

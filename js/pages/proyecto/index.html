@@ -3,7 +3,7 @@
 
 <section id="proyecto-images">
 
-	<img class="image" ng-repeat-start="image in proyectosData[slug].images" src="{{ image.path_resized }}" alt="{{ image.title }}">
+	<img class="image" ng-repeat-start="image in proyectosData[slug].images" src="{{ image.path }}" alt="{{ image.title }}">
 	<div ng-repeat-end class="description" ng-show="$index == 0 && proyectosData[slug].content">
 		<div class="background" style="background-color: {{ proyectosData[slug].background_color }}"></div>
 		<div class="container" ng-bind-html="trustAsHtml(proyectosData[slug].content)"></div>

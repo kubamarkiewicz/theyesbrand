@@ -25,7 +25,7 @@ class Proyectos extends Controller
             }    
             // resize images
             if ($item->images) foreach ($item->images as $key => $image) {
-                $item->images[$key]->path_resized = $image->getThumb(1920,1080,['extension' => 'jpg']);
+                // $item->images[$key]->path_resized = $image->getThumb(1920,1080,['extension' => 'jpg']);
             }  
             $return[$item->slug] = $item;
         }

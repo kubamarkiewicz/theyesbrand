@@ -52,5 +52,7 @@ tabs:
                 extension: auto
             span: auto
             type: fileupload
-            commentAbove: 'Ancho mínimo 1920px'
+            commentAbove: 'Imagenes en formato JPG. Ancho mínimo 1920px. Tamaño optimo max 500KB.'
             tab: Imágenes
+            commentAbove: 
+            fileTypes: jpg
